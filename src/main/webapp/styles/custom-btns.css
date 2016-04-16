@@ -1,0 +1,105 @@
+.btn-customsmall{
+  padding: 4px 8px !important;
+  font-size: 12px !important;
+}
+
+.btn-darkest {
+  color: #ffffff;
+  background-color: #777777;
+  border-color: #777777;
+}
+.btn-darkest:hover,
+.btn-darkest:focus,
+.btn-darkest:active,
+.btn-darkest.active,
+.open .dropdown-toggle.btn-darkest {
+  color: #ffffff;
+  background-color: #636363;
+  border-color: #585858;
+}
+.btn-darkest:active,
+.btn-darkest.active,
+.open .dropdown-toggle.btn-darkest {
+  background-image: none;
+}
+.btn-darkest.disabled,
+.btn-darkest[disabled],
+fieldset[disabled] .btn-darkest,
+.btn-darkest.disabled:hover,
+.btn-darkest[disabled]:hover,
+fieldset[disabled] .btn-darkest:hover,
+.btn-darkest.disabled:focus,
+.btn-darkest[disabled]:focus,
+fieldset[disabled] .btn-darkest:focus,
+.btn-darkest.disabled:active,
+.btn-darkest[disabled]:active,
+fieldset[disabled] .btn-darkest:active,
+.btn-darkest.disabled.active,
+.btn-darkest[disabled].active,
+fieldset[disabled] .btn-darkest.active {
+  background-color: #777777;
+  border-color: #777777;
+}
+
+.remove-hyperlink{
+	text-decoration:none;
+	color:#333333;
+}
+
+.remove-hyperlink:hover{
+    text-decoration:none;
+    color:#333333;
+}
+
+/* .watermark */
+/* { */
+/*  position:fixed; */
+/*  bottom:5px; */
+/*  right:5px; */
+/*  opacity:0.5; */
+/*  z-index:99; */
+/*  color:black; */
+/* } */
+
+.watermark {
+  color: #CCE6CC;
+  font-size: 45pt;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  position: absolute;
+  width: 354px;
+  height: 69px;
+  margin: 0;
+  z-index: 99;
+  left:975px;
+  top:350px;
+  opacity:0.5;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor:default;
+}
+.watermark2 {
+  color: #FFCCCC;
+  font-size: 60pt;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  position: absolute;
+  width: 472px;
+  height: 69px;
+  margin: 0;
+  z-index: 99;
+  left:500px;
+  top:760px;
+  opacity:0.5;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor:default;
+}
