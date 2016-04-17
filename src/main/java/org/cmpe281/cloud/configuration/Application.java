@@ -1,4 +1,4 @@
-package org.cmpe281.cloud;
+package org.cmpe281.cloud.configuration;
 
 
 import org.springframework.boot.SpringApplication;

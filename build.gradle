@@ -16,7 +16,7 @@ buildscript {
     }
 }
 
-sourceCompatibility = 1.5
+mainClassName = "org.cmpe281.cloud.configuration.Application"
 
 repositories {
     mavenCentral()
@@ -24,17 +24,31 @@ repositories {
 
 jar {
     baseName = 'cmpe281project'
-    version =  '1.0'
+    version = '1.0'
 }
 
 dependencies {
+
+    //Testing Dependency
     testCompile group: 'junit', name: 'junit', version: '4.11'
+
+    //Spring Support
     compile 'org.springframework:spring-context:4.2.2.RELEASE'
     compile("org.springframework.boot:spring-boot-starter-web:1.2.7.RELEASE")
+
+    //Gson library by Google
     compile 'com.google.code.gson:gson:2.6.1'
+
+    //MongoDB support for spring
     compile 'org.springframework.boot:spring-boot-starter-data-mongodb:1.2.5.RELEASE'
+    compile 'org.mongodb:mongo-java-driver:3.2.2'
+    compile 'org.springframework.data:spring-data-mongodb:1.9.1.RELEASE'
+
+    //Logging Support
     compile 'log4j:log4j:1.2.17'
     compile 'org.apache.logging.log4j:log4j-core:2.0.1'
     compile 'org.apache.logging.log4j:log4j-api:2.0.1'
+
+    //JSON Object library
     compile 'org.json:json:20140107'
 }
