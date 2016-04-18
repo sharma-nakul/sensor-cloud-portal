@@ -5,4 +5,5 @@ package org.cmpe281.cloud.dbhandler;
  * Class to manage MongoDb operations
  */
 public class DBOperations {
+
 }

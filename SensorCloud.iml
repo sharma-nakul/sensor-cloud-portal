@@ -15,6 +15,15 @@
         </sourceRoots>
       </configuration>
     </facet>
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/java/org/cmpe281/cloud/configuration/Application.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/org/cmpe281/cloud/configuration/MongoConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/org/cmpe281/cloud/configuration/MongoTemplateConfig.java</file>
+        </fileset>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/build/classes/main" />

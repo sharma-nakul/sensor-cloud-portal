@@ -16,7 +16,7 @@ buildscript {
     }
 }
 
-mainClassName = "org.cmpe281.cloud.configuration.Application"
+
 
 repositories {
     mavenCentral()
@@ -25,6 +25,7 @@ repositories {
 jar {
     baseName = 'cmpe281project'
     version = '1.0'
+    mainClassName = "org.cmpe281.cloud.configuration.Application"
 }
 
 dependencies {
@@ -33,7 +34,7 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
 
     //Spring Support
-    compile 'org.springframework:spring-context:4.2.2.RELEASE'
+    compile 'org.springframework:spring-context:4.2.5.RELEASE'
     compile("org.springframework.boot:spring-boot-starter-web:1.2.7.RELEASE")
 
     //Gson library by Google

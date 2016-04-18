@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
  */
 
 
-@Document
+@Document(collection = "VirtualSensor")
 public class BarometerSensor {
 
     @Id
@@ -18,23 +18,23 @@ public class BarometerSensor {
     private String time;
     private String latitude;
     private String longitude;
-    /*private String depth;
+    private String depth;
     private String station;
     private String parameter;
     private String unit;
     private String value;
-    private String coordinate;*/
+    private String coordinate;
 
-    public BarometerSensor(String time, String latitude, String longitude/*, String depth, String station, String parameter, String unit, String value*/) {
+    public BarometerSensor(String time, String latitude, String longitude, String depth, String station, String parameter, String unit, String value) {
         this.time = time;
         this.latitude = latitude;
         this.longitude = longitude;
-       /* this.depth = depth;
+        this.depth = depth;
         this.station = station;
         this.parameter = parameter;
         this.unit = unit;
         this.value = value;
-        this.coordinate=latitude+","+longitude;*/
+        this.coordinate = latitude + "," + longitude;
     }
 
     public String getTime() {
@@ -60,7 +60,6 @@ public class BarometerSensor {
     public void setLongitude(String longitude) {
         this.longitude = longitude;
     }
-/*
     public String getDepth() {
         return depth;
     }
@@ -115,6 +114,11 @@ public class BarometerSensor {
 
     public void setCoordinate(String coordinate) {
         this.coordinate = coordinate;
-    }*/
+    }
+
+    @Override
+    public String toString() {
+        return "BarometerSensor [id=" + id + ", time=" + time + ", latitude=" + latitude + ", longitude" + longitude + ", depth" + depth + ", station" + station + ", parameter" + parameter + ", unit" + unit + ", value" + value + ", coordinate" + coordinate + "]";
+    }
 }
 
