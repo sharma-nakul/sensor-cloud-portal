@@ -44,7 +44,7 @@ public class MongoConfig {
 
         // Mongo DB Factory
         SimpleMongoDbFactory simpleMongoDbFactory = new SimpleMongoDbFactory(
-                mongoClient, "mongo.dbname");
+                mongoClient, env.getRequiredProperty("mongo.dbname"));
 
         return simpleMongoDbFactory;
     }
