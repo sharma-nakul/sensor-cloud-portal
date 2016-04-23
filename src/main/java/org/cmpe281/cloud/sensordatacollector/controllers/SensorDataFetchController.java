@@ -49,7 +49,7 @@ public class SensorDataFetchController {
 			}
 			else{
 				String[] latlangArr = input.split(",");
-				sensorReadings = sdo.search(latlangArr [0], latlangArr [1]); //search
+				sensorReadings = sdo.search(latlangArr [0], latlangArr [1]); //search on the basis of latitude & longitude
 			}
 			sdo.closeConnection();  //close DB
 		} 
